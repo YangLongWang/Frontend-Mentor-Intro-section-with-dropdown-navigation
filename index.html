@@ -19,26 +19,23 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
       <header>
         <div class="menu">
           <div id="logo"></div>
-          <nav class="dropdown">
-            <li>Features <img src="./images/icon-arrow-down.svg" /></li>
-            <li>Company <img src="./images/icon-arrow-down.svg" /></li>
+          <nav id="dropdown" class="dropdown">
+            <li id="dp-features">
+              Features
+              <img src="./images/icon-arrow-down.svg" />
+              <!-- <img id="arrow-features" /> -->
+            </li>
+            <li id="dp-company">
+              Company
+              <img src="./images/icon-arrow-down.svg" />
+              <!-- <img id="arrow-company" /> -->
+            </li>
             <li>Careers</li>
             <li>About</li>
           </nav>
@@ -46,6 +43,35 @@
         <div class="login">
           <li>Login</li>
           <li>Register</li>
+        </div>
+        <div id="features" class="features hidden">
+          <div class="features-menu todo">
+            <img src="./images/icon-todo.svg" />
+            <li>Todo List</li>
+          </div>
+          <div class="features-menu calendar">
+            <img src="./images/icon-calendar.svg" />
+            <li>Calendar</li>
+          </div>
+          <div class="features-menu reminders">
+            <img src="./images/icon-reminders.svg" />
+            <li>Reminders</li>
+          </div>
+          <div class="features-menu planning">
+            <img src="./images/icon-planning.svg" />
+            <li>Planning</li>
+          </div>
+        </div>
+        <div id="company" class="company hidden">
+          <div class="company-menu">
+            <li>History</li>
+          </div>
+          <div class="company-menu">
+            <li>Our Team</li>
+          </div>
+          <div class="company-menu">
+            <li>Blog</li>
+          </div>
         </div>
       </header>
 
@@ -77,11 +103,7 @@
         <li><img src="./images/client-maker.svg" /></li>
       </footer>
     </div>
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+
+    <script src="script.js"></script>
   </body>
 </html>
