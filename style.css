@@ -3,7 +3,6 @@
   --medium-gray: hsl(0, 0%, 41%);
   --almost-black: hsl(0, 0%, 8%);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -62,18 +61,6 @@ header {
 .dropdown li:hover {
   color: var(--almost-black);
 }
-/* #arrow-features {
-  width: 10px;
-  height: 10px;
-  background: url('./images/icon-arrow-down.svg') no-repeat center;
-  border: none;
-}
-#arrow-company {
-  width: 10px;
-  height: 10px;
-  background: url('./images/icon-arrow-down.svg') no-repeat center;
-  border: none;
-} */
 .login {
   display: flex;
   justify-content: space-between;
@@ -158,9 +145,6 @@ footer li img {
 }
 /* features & company */
 .features {
-  /* grid-column: 2 / 3;
-  grid-row: 1;
-  transform: translate(-64%,39%); */
   position: absolute;
   top: 0;
   left: 0;
@@ -174,7 +158,7 @@ footer li img {
   justify-content: space-around;
   align-items: left;
   padding: 25px 0;
-  box-shadow: 0 0 50px 10px rgb(230,230,230);
+  box-shadow: 0 0 40px 5px rgb(230,230,230);
 }
 .features-menu {
   display: flex;
@@ -194,9 +178,6 @@ footer li img {
   margin-right: 10px;
 }
 .company {
-  /* grid-column: 2 / 3;
-  grid-row: 1;
-  transform: translate(82%,49%); */
   position: absolute;
   top: 0;
   left: 0;
@@ -210,7 +191,7 @@ footer li img {
   justify-content: space-around;
   align-items: left;
   padding: 25px 0;
-  box-shadow: 0 0 50px 10px rgb(230,230,230);
+  box-shadow: 0 0 40px 5px rgb(230,230,230);
 }
 .company-menu {
   display: flex;

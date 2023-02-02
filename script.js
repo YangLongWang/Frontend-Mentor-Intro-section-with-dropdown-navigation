@@ -9,18 +9,32 @@ function handleClick(event) {
   const featuresEle = event.target.parentElement.children[0];
   const companyEle = event.target.parentElement.children[1];
 
+  // features
   if (event.target.getAttribute("id") == featuresEle.getAttribute("id")) {
     if (!company.matches(".hidden")) {
       company.classList.toggle("hidden");
+      dpCompany.childNodes[1].style.rotate = "";
     }
 
-    dropdown.childNodes[1].children[0].style.rotate = "180deg";
+    dpFeatures.childNodes[1].style.rotate = "180deg";
+
+    if (!features.matches(".hidden")) {
+      dpFeatures.childNodes[1].style.rotate = "";
+    }
     features.classList.toggle("hidden");
+
+    // company
   } else if (event.target.getAttribute("id") == companyEle.getAttribute("id")) {
     if (!features.matches(".hidden")) {
       features.classList.toggle("hidden");
+      dpFeatures.childNodes[1].style.rotate = "";
     }
 
+    dpCompany.childNodes[1].style.rotate = "180deg";
+
+    if (!company.matches(".hidden")) {
+      dpCompany.childNodes[1].style.rotate = "";
+    }
     company.classList.toggle("hidden");
   }
 }
