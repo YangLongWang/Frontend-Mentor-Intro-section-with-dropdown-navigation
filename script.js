@@ -1,4 +1,3 @@
-// const dropdown = document.getElementById("dropdown");
 const dpFeatures = document.getElementById("dp-features");
 const dpCompany = document.getElementById("dp-company");
 const features = document.getElementById("features");
@@ -13,6 +12,7 @@ function handleClick(event) {
     if (!company.matches(".hidden")) {
       company.classList.toggle("hidden");
       dpCompany.childNodes[1].style.rotate = "";
+      dpCompany.style.color = "";
     }
 
     dpFeatures.childNodes[1].style.rotate = "180deg";
@@ -29,6 +29,7 @@ function handleClick(event) {
     if (!features.matches(".hidden")) {
       features.classList.toggle("hidden");
       dpFeatures.childNodes[1].style.rotate = "";
+      dpFeatures.style.color = "";
     }
 
     dpCompany.childNodes[1].style.rotate = "180deg";
