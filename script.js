@@ -1,5 +1,4 @@
-const dropdown = document.getElementById("dropdown");
-
+// const dropdown = document.getElementById("dropdown");
 const dpFeatures = document.getElementById("dp-features");
 const dpCompany = document.getElementById("dp-company");
 const features = document.getElementById("features");
@@ -17,9 +16,11 @@ function handleClick(event) {
     }
 
     dpFeatures.childNodes[1].style.rotate = "180deg";
+    dpFeatures.style.color = "hsl(0, 0%, 8%)";
 
     if (!features.matches(".hidden")) {
       dpFeatures.childNodes[1].style.rotate = "";
+      dpFeatures.style.color = "";
     }
     features.classList.toggle("hidden");
 
@@ -31,9 +32,11 @@ function handleClick(event) {
     }
 
     dpCompany.childNodes[1].style.rotate = "180deg";
+    dpCompany.style.color = "hsl(0, 0%, 8%)";
 
     if (!company.matches(".hidden")) {
       dpCompany.childNodes[1].style.rotate = "";
+      dpCompany.style.color = "";
     }
     company.classList.toggle("hidden");
   }

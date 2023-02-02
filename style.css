@@ -148,7 +148,7 @@ footer li img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(90%,22%);
+  transform: translate(90%,24%);
   width: 153px;
   height: 162px;
   color: var(--medium-gray);
@@ -181,7 +181,7 @@ footer li img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(282%,28%);
+  transform: translate(282%,30%);
   width: 117px;
   height: 130px;
   color: var(--medium-gray);
